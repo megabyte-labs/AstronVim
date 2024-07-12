@@ -1,12 +1,54 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCommunity: import any community modules here
 -- We import this file in `lazy_setup.lua` before the `plugins/` folder.
 -- This guarantees that the specs are processed before any user plugins.
 
 ---@type LazySpec
 return {
+  -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
+  { import = "astrocommunity.pack.angular" },
+  { import = "astrocommunity.pack.ansible" },
+  { import = "astrocommunity.pack.bash" },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.java" },
+  { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.lua" },
-  -- import/override with your plugins folder
+  { import = "astrocommunity.pack.markdown" },
+  { import = "astrocommunity.pack.php" },
+  { import = "astrocommunity.pack.ps1" },
+  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.ruby" },
+  { import = "astrocommunity.pack.rust" },
+  { import = "astrocommunity.pack.terraform" },
+  { import = "astrocommunity.pack.toml" },
+  { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.code-runner.sniprun" },
+  { import = "astrocommunity.color.ccc-nvim" },
+  { import = "astrocommunity.color.modes-nvim" },
+  { import = "astrocommunity.completion.copilot-lua-cmp" },
+  { import = "astrocommunity.debugging.nvim-bqf" },
+  { import = "astrocommunity.editing-support.auto-save-nvim" },
+  { import = "astrocommunity.editing-support.neogen" },
+  { import = "astrocommunity.editing-support.refactoring-nvim" },
+  { import = "astrocommunity.editing-support.suda-vim" },
+  { import = "astrocommunity.editing-support.treesj" },
+  { import = "astrocommunity.editing-support.vim-move" },
+  { import = "astrocommunity.file-explorer.oil-nvim" },
+  { import = "astrocommunity.git.diffview-nvim" },
+  { import = "astrocommunity.git.git-blame-nvim" },
+  { import = "astrocommunity.git.neogit" },
+  { import = "astrocommunity.git.octo-nvim" },
+  { import = "astrocommunity.indent.indent-blankline-nvim" },
+  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+  { import = "astrocommunity.media.vim-wakatime" },
+  { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.motion.nvim-surround" },
+  { import = "astrocommunity.motion.vim-matchup" },
+  { import = "astrocommunity.scrolling.neoscroll-nvim" },
+  { import = "astrocommunity.startup.fsplash-nvim" },
+  { import = "astrocommunity.syntax.vim-easy-align" },
+  { import = "astrocommunity.test.neotest" },
 }

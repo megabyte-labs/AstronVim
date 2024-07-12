@@ -17,3 +17,9 @@ end
 
 require "lazy_setup"
 require "polish"
+
+--- Show Neotree by default
+vim.api.nvim_create_autocmd("VimEnter", {
+  group = vim.api.nvim_create_augroup("NeotreeOnOpen", { clear = true }),
+  command = "Neotree",
+})
